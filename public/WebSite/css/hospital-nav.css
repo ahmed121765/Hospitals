@@ -1,0 +1,131 @@
+/* Keep the hospital navigation readable over the light homepage hero. */
+.main-header.header-style-three {
+	position: relative;
+	left: auto;
+	background: #173c46;
+	z-index: 1000;
+}
+
+.header-style-three .inner-container {
+	padding: 0 28px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-style-three .header-upper .logo-outer,
+.header-style-three .header-upper .nav-outer {
+	float: none;
+	padding: 0;
+}
+
+.header-style-three .logo-outer img {
+	max-height: 68px;
+	width: auto;
+}
+
+.header-style-three .nav-outer,
+.header-style-three .main-menu,
+.header-style-three .main-menu .navigation {
+	width: auto;
+}
+
+.header-style-three .main-menu .navigation {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+}
+
+.header-style-three .main-menu .navigation > li {
+	float: none;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.header-style-three .main-menu .navigation > li > a {
+	display: block;
+	padding: 12px 11px;
+	font-size: 15px;
+	border-radius: 6px;
+}
+
+.header-style-three .main-menu .navigation > li.login-menu-item > a {
+	margin-inline-start: 8px;
+	padding: 11px 17px;
+	color: #173c46;
+	background: #fff;
+	font-weight: 700;
+}
+
+.header-style-three .main-menu .navigation > li.login-menu-item > a:hover,
+.header-style-three .main-menu .navigation > li.login-menu-item > a:focus {
+	color: #fff;
+	background: #159e9a;
+}
+
+.header-style-three .sticky-header .inner-container {
+	min-height: 72px;
+}
+
+.header-style-three .sticky-header .navigation > li > a {
+	padding: 20px 9px !important;
+	font-size: 14px;
+}
+
+.header-style-three .sticky-header .navigation > li.login-menu-item > a {
+	padding: 10px 14px !important;
+	color: #fff;
+	background: #159e9a;
+}
+
+.sticky-header .mobile-nav-toggler {
+	display: none;
+}
+
+.mobile-menu .navigation > li.login-menu-item > a {
+	color: #fff;
+	background: #159e9a;
+}
+
+@media (max-width: 991px) {
+	.header-style-three .inner-container {
+		padding: 8px 18px;
+		flex-wrap: wrap;
+	}
+
+	.header-style-three .header-upper .logo-outer {
+		width: auto;
+		padding: 0;
+		text-align: start;
+	}
+
+	.header-style-three .header-upper .nav-outer {
+		width: auto;
+		margin-inline-start: auto;
+	}
+
+	.header-style-three .nav-outer .mobile-nav-toggler .icon {
+		padding: 8px;
+		color: #fff;
+	}
+
+	.header-style-three .sticky-header .inner-container {
+		min-height: 64px;
+		flex-wrap: nowrap;
+	}
+
+	.header-style-three .sticky-header .main-menu {
+		display: none !important;
+	}
+
+	.sticky-header .mobile-nav-toggler {
+		display: block;
+	}
+}
+
+@media (max-width: 575px) {
+	.header-style-three .logo-outer img {
+		max-height: 54px;
+	}
+}
